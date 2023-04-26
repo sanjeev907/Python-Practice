@@ -802,12 +802,13 @@ import json
 # a = person()
 # a.student()
 
-l = [{"V":"S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII":"S005"}, {"V":"S009"},{"VIII":"S007"}]
-a= set(l)
-print(a)
-# for i in l.values():
-#     a.append(i)
-#     print(a)
+# l = [{"V":"S001"}, {"V": "S002"}, {"VI": "S001"}, {"VI": "S005"}, {"VII":"S005"}, {"V":"S009"},{"VIII":"S007"}]
+# a = dict(l)
+# myl = []
+
+# for i in a:
+#     myl.append(i)
+#     print(type(myl))
 
 
 

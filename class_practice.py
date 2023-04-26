@@ -41,3 +41,63 @@
 
 # st = s()
 # st.su()       
+
+
+# class student:
+#     x = isinstance(5, int)
+#     print(x)
+# class marks:
+#     y =isinstance("hello world",str)
+
+# # o = student()
+# b = marks()
+
+
+# class Student:
+#     def fun(self):
+
+#         student_name = 'Terrance Morales'
+#         marks = 93 
+#         code = f'student name is : {student_name}',
+#         decode = f'the marks of the students is : {marks}'
+#         print(code,decode)
+
+# cl = Student()
+# cl.fun()
+
+
+# class Student:
+#     def fun(self):
+#         student_name = 'Terrance Morales \n'
+#         marks = 93 
+#         student_class = "IVth class "
+#         code = f'student name is : {student_name}\n'
+#         decode = f'the marks of the students is : {marks}\n'
+#         decode1 = f'the marks of the students is : {student_class}\n'
+#         print(code,decode,student_class)
+        
+
+# cl = Student()
+# cl.fun()
+
+# class Student:
+#     student_name = 'Terrance Morales\n'
+#     marks = "93\n"
+#     student_class = "IVth class\n"
+
+#     def fun(self):
+#         print(self.student_name,self.marks,self.student_class)
+
+
+# obj= Student()
+# obj.fun()
+
+import roman
+
+# r = int(input("Please Enter the value of Roman:"))
+# a = roman.toRoman(r)
+# print(a)
+
+# r = str(input("Please Enter the value of Roman:"))
+# a = roman.fromRoman(r)
+# print(a)
