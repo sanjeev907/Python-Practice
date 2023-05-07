@@ -778,7 +778,7 @@ import json
 #     print('dict is not empty')
 
 
-# from collections import Counter
+from collections import Counter
 
 # d1 = {'a': 100, 'b': 200, 'c':300}
 # d2 = {'a': 300, 'b': 200, 'd':400}
@@ -811,50 +811,364 @@ import json
 #     print(type(myl))
 
 
+# def count():
+#     item =  [{'item': 'item1', 'amount': 400}, {'item': 'item2', 'amount': 300}, {'item': 'item1', 'amount': 750}]
+#     result= Counter()
+#     for i in item:
+#         result[i['item']] += i['amount']
+#         print(result)
+
+# count()
+
+
+# x = lambda a,b,c: a + b + c
+# print(x(5,6,1))
+
+
+
+# l = ['p', 'q']
+# n = 5
+# a = [i for i in l if i * n]
+# print(a)
+
+
+
+# x = 'w3resource'
+# print(format(id(x), 'x'))
+
+
+# l1 = ['red','green','yellow']
+# l2 = ['red','green','yellow','apple']
+# a = set(l1)
+# b = set(l2)
+# x = a.intersection(b)
+# c = list(x)
+# print(type(c))
+
+
+# l = [11, 33, 50]
+# s = ''.join(map(str,l))
+# print(s)
+
+
+# x = lambda a,b,c:a+b+c
+# print(x(5,5,5))
 
 
 
 
 
 
+# a = lambda a,b,c:a*b*c
+# print(a(5,8,8))
 
 
+# s = {}
+# for i in range(1,21):
+#     s[str(i)] = []
+
+# print(s)
+# a = []
+
+# for i in range(1,21):
+#     b = a *20
+# print(b)
+
+# l1 = ["a","b","c","d","e","f"]
+# l2 = ["d","e","f","g","h"]
+# s1 = set(l1)
+# s2 = set(l2)
+# x = s1.difference(s2)
+# y = s2.difference(s1)
+# a =list(x)
+# b = list(y)
+# print(a)
+# print(b)
 
 
+# color = [("Black", "#000000", "rgb(0, 0, 0)"), ("Red", "#FF0000", "rgb(255, 0, 0)"),
+#          ("Yellow", "#FFFF00", "rgb(255, 255, 0)")]
+
+# t = tuple(color)
+
+# t1,t2,t3 = t
+# print(t1)
+# print(t2)
+# print(t3)
 
 
+# l = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15]
+# a = l[:5]
+# b = l[5:10]
+# c = l[10:15]
+# d = f'{a}{b}{c}'
+# print(d)
+# # e = []
+# # for i in d:
+# #     e.append(i)
+# #     f = "".join(map(str,e))
+# # print(f)
 
 
+# l = [(1,2),(3,4),(1,2),(5,6),(7,8),(1,2),(3,4),(3,4),(7,8),(9,10)]
+# s = set(l)
+# a = list(s)
+# a.sort()
+# print(a)
 
+# x = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+# a = [i for i in x if i % 2 != 0]
+# print(a)
 
+# l =['Red', 'Green', 'Black'] 
+# l.insert(0,"c")
+# l.insert(2,"c")
+# l.insert(4,"c")
+# print(l) 
 
+# l = [["Red"],["Green"],["Yellow"]]
+# print(l[:1])
+# print(l[1:2])
+# print(l[2:3])
 
+# l1= ["Black", "Red", "Maroon", "Yellow"]
+# l2 = ["#000000", "#FF0000", "#800000", "#FFFF00"]
+# black=l1[:1]
+# red= l1[1:2]
+# maroon = l1[2:3]
+# yellow = l1[3:]
+# q = l2[:1]
+# w = l2[1:2]
+# e = l2[2:3]
+# r = l2[3:] 
+# a = f'"colour_name:"{black}"colour_code:"{q}'
+# b = f'"colour_name:"{red}"colour_code:"{w}'
+# c = f'"colour_name:"{maroon}"colour_code:"{e}'
+# d = f'"colour_name:"{yellow}"colour_code:"{r}'
+# print(a)
+# # print(b)
+# # print(c)
+# # print(d)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+# fruits = ["apple", "banana", "cherry"]
+# for i in fruits:
     
+#     if i == "banana":
+#      continue
+#     print(i)
+
+# i = 1
+# while i< 10:
+#     i += 1
+    
+#     if i == 2:
+#         continue
+#     print(i)
+
+# a = lambda a,b,c:a+b+c
+# print(a(5,6,4))
+
+
+# l = my_list = [{'key': {'subkey': 1}}, {'key': {'subkey': 10}}, {'key': {'subkey': 5}}]
+# l.sort(key=lambda e: e['key']['subkey'], reverse=True)
+# print(l)
+
+# l = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n']
+# a = l[0::3]
+# b = l[1::3]
+# c = l[2::3]
+# d = [f'{a},{b},{c}']
+# print(d)
+
+
+# l1 = ["red", "orange", "green", "blue", "white"]
+# l2 = ["black", "yellow", "green", "blue"]
+# # Color1-Color2: ['white', 'orange', 'red']
+# # Color2-Color1: ['black', 'yellow']
+
+# s1 = set(l1)
+# s2 = set(l2)
+# a = s1.difference(s2)
+# b = s2.difference(s1)
+# c = list(a)
+# d = list(b)
+# print(c)
+# print(d)
+
+# l = ['red', 'green', 'orange']
+
+# a = "".join(map(str,l))
+# print(a)
+
+# l= [{'key1': 'value1', 'key2': 'value2'}, {'key1': 'value3', 'key2': 'value4'}]  
+# for i in l.keys
+# import ast
+# color ="['Red', 'Green', 'White']"
+# a = ast.literal_eval(color) 
+# print(a)
+
+
+# l1=[1, 3, 5, 7, 9, 10] 
+# l2 = [2, 4, 6, 8]
+# l1.pop()
+# l1.extend(l2)
+# print(l1)
+
+# x = [(4, 1), (1, 2), (6, 0)]
+# print(x[2])
+
+# n = 5
+# l= [{}]
+# for i in range(n):
+#     l.append({})
+
+# print(l)
+
+# l = [1,2,3,4]
+# l.insert(0,"emp")
+# l.insert(2,"emp")
+# l.insert(4,"emp")
+# l.insert(6,"emp")
+
+# a = l[0:2]
+# b = ''.join(map(str,a))
+# c = l[2:4]
+# d = ''.join(map(str,c))
+# e = l[4:6]
+# f =''.join(map(str,e))
+# g = l[6:]
+# h =''.join(map(str,g))
+# print(h)
+
+# i = [f'{b},{d},{f},{h}']
+# print(i)
+
+# l = [3, 4, 0, 0, 0, 6, 2, 0, 6, 7, 6, 0, 0, 0, 9, 10, 7, 4, 4, 5, 3, 0, 0, 2, 9, 7, 1]
+# l.sort(reverse=True)
+# print(l)
+
+# l = [1,2,3], [4,5,6], [10,11,12], [7,8,9]
+# a= max(l)
+# print(a)
+
+# list1 = [220, 330, 500]
+# list2 = [12, 17, 21]
+# list1.extend(list2)
+# # print(list1)
+# a = max(list1)
+# print(a)
+
+# l1 = [10, 20, 30]
+# l2 = [40, 50, 60]
+# l2.extend(l1)
+
+# print(l2)
+# import itertools
+# l = [[10, 20], [40], [30, 56, 25], [10, 20], [33], [40]]
+# l.sort()
+# new_num = list(num for num,_ in itertools.groupby(l))
+# print(new_num)
+
+# l = ['abcd', 'abc', 'bcd', 'bkie', 'cder', 'cdsw', 'sdfsd', 'dagfa', 'acjd']
+# # # a = [i for i in l if i.startswith("a")]
+# # d = [i for i in l if i.startswith("d")]
+# w = [i for i in l if i.startswith("w")]
+# # print(d)
+# # print(a)
+# print(w)
+
+# l = [{},{},{}]
+# for i in l :
+#     if i == {}:
+#         print("True")
+#     else:
+#         print("Fale")
+
+# l= [{1,2},{},{}]
+# for i in l :
+#     if i == {}:
+#         print("True")
+#     else:
+#         print("False")
+# l = [0, 10, [20, 30], 40, 50, [60, 70, 80], [90, 100, 110, 120]]
+# a = l[0:2]
+# b = l[2:3]
+# c = l[3:5]
+# d = f'{a}{b}{c}'
+# print(d)
+
+# l = [0, 0, 1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 8, 9, 4, 4]
+# a= set(l)
+# b = list(a)
+# print(b)
+
+# l = [0, 0, 1, 2, 3, 4, 4, 5, 6, 6, 6, 7, 8, 9, 4, 4]
+# a = l[0:2]
+# z = l[3:3]
+# v = l[3:3]
+# b = l[2:4]
+# c = l[5:7]
+# d = l[7:8]
+# e = l[8:11]
+# f = l[11:12]
+# g = l[12:13]
+# h = l[13:14]
+# i = l[14:]
+# x= [f'{a}{z}{b}{v}{c}{d}{e}{f}{g}{h}{i}']
+# print(x)
+
+# l = [1, 1, 2, 3, 4, 4.3, 5, 1]
+# a= str(l)
+# z = a.encode()
+# print(z)
+
+# l = [1, 1, 2, 3, 4, 4, 5, 1]
+# # l.insert(2,12)
+# l.pop(2)
+# print(l)
+
+
+# l = [1, 1, 2, 3, 4, 4, 5, 1]
+# a = set(l)
+# b = list(a)
+# print(b)
+
+# l = [22.4, 4.0, -16.22, -9.1, 11.0, -12.22, 14.2, -5.2, 17.5]
+# a= sum(l)
+# print(a)
+# import math
+# l = [22.4, 4.0, 16.22, 9.1, 11.0, 12.22, 14.2, 5.2, 17.5]
+
+# # a = min(l)
+# # b = max(l)
+# l.sort()
+# # print(math.floor(a))
+# # print(math.floor(b))
+# print(l)
+
+# new = []
+# for i in range(3):
+#     new.append([])
+
+#     for j in range(2):
+#         new[i].append(0)
+
+# print(new)
+
+
+# l = [[1, 2, 3], [1, 2, 3], [1, 2, 3]]
+# res = [sum(i) for i in zip(*l)]
+# print(sum(str(res)))
+
+# l = [[1, 3], [5, 7], [9, 11]]
+# l1 = [[2, 4], [6, 8], [10, 12, 14]]
+
+# for a,b in zip(l,l1):
+ 
+ 
+#  print(a,b)
+
+
+l = [[1, 3], [5, 7], [9, 11], [13, 15, 17]]
+a = l.count()
+print(a)

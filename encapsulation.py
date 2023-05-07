@@ -13,3 +13,5 @@ class A:
 
 obj = A()
 obj.show()
+print(obj._a)
+# print(obj.__b)
