@@ -19,17 +19,18 @@
 
 # class Maruti(car):
 #     def speed(self):
-#         print("th speed of maruti is 100/km/hr.")
+#         print("the speed of maruti is 100/km/hr.")
 
 # class Tata(car):
 #     def speed(self):
-#         print("th speed of maruti is 180/km/hr.")
+#         print("the speed of maruti is 180/km/hr.")
 
 
 # obj = Maruti()
 # obj.show()
 # obj.speed()
 # obj1 = Tata()
+# obj1.show()
 # obj1.speed()
 
 
@@ -43,8 +44,9 @@
 #          pass
         
 # class B(A):
-#     def fun(self):
+#     def fun1(self):
 #         print("hello")
 
 # obj = B()
 # obj.show()
+# obj.fun1()

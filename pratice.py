@@ -1169,6 +1169,487 @@ from collections import Counter
 #  print(a,b)
 
 
-l = [[1, 3], [5, 7], [9, 11], [13, 15, 17]]
-a = l.count()
-print(a)
+# l = [[1, 3], [5, 7], [9, 11], [13, 15, 17]]
+# a = l.count()
+# print(a)
+
+# # l = [[0], [1, 3], [5, 7], [9, 11], [13, 15, 17]]
+# # l = [[0], [1, 3], [5, 7], [9, 11], [3, 5, 7]]
+# l= [[12], [1, 3], [1, 34, 5, 7], [9, 11], [3, 5, 7]]
+# m = max(l)
+# m1 = min(l)
+# print(m1)
+# print(m)
+
+# l= [[1, 3], [5, 7], [1, 11], [1, 15, 7]]
+# l = ['A', 'B'], ['A', 'C'], ['A', 'D', 'E'], ['B', 'C', 'D']
+# l.count("A")
+# print(l)
+
+
+# l = [2, 3, 8, 4, 7, 9, 8, 2, 6, 5, 1, 6, 1, 2, 3, 4, 6, 9, 1, 2]
+# a = []
+# for i in l:
+#     b = i.count()
+#     a.append(b)
+
+# print(a)
+
+# l = [2, 3, 8, 4, 7, 9, 8, 2, 6, 5, 1, 6, 1, 2, 3, 4, 6, 9, 1, 2]
+# # [0, 3, 5, 7, 10]
+# a = l[0:1]
+# b = l[3:4]
+# c = l[5:6]
+# d = l[7:8]
+# e = l[10:11]
+# f= f'{a}{b}{c}{d}{e}'
+# print(f)
+
+# l = [1, 2, 4, 6, 8, 10, 12, 14, 16, 17]
+# l2 = [1, 2, 4, 6, 8, 10, 12, 14, 16, 17]
+# # l2.sort(reverse=True)
+# if l == l2:
+#     print("True")
+
+# else:
+#     print("False")
+
+
+# import json
+# l = [{'Green': '#008000'}, {'Black': '#000000'}, {'Blue': '#0000FF'}, {'Green': '#008000'}]
+# a = tuple(l)
+# b = set(a)
+# print(b)
+
+
+# l1 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+# l2 = [[12, 18, 23, 25, 45], [7, 11, 19, 24, 28], [1, 5, 8, 18, 15, 16]]
+# # b = [i for i in l2]
+# b = []
+# a = set(l1)
+# for i in l2:
+#     for j in i:
+#         b.append(j)
+
+# c = set(b)
+# d = a.intersection(c)
+# e = list(d)
+# print(e)
+
+# l1 = [[12, 18, 23, 25, 45], [7, 12, 18, 24, 28], [1, 5, 8, 12, 15, 16, 18]]
+# a = [b for i in l1 for b in i]
+# b = set(a)
+# print(list(b))
+
+# def fun():
+#     l = ['Red', 'Green', 'Blue', 'White', 'Black']
+#     a = l[:1][-1][::-1]
+#     b = l[:2][-1][::-1]
+#     c = l[:3][-1][::-1]
+#     d = l[:4][-1][::-1]
+#     e = l[:5][-1][::-1]
+#     f = f'{a},{b},{c},{d},{e}'
+#     print(f)
+
+# fun()
+
+# l = [(2, 7), (2, 6), (1, 8), (4, 9)]
+# Output = [(x * y) for x, y in l]
+# print(max(Output))
+# print(min(Output))
+
+# l = [10, 20, 30, 40, 20, 50, 60, 40]
+# a = set(l)
+# b = list(a)
+# result = 1
+# for i in b:
+#     result *= i
+# print(result)
+
+# list1 = [1, 2, 3, 4, 5, 6, 7]
+# list2 =  [10, 20, 30, 40, 50, 60, 70]
+# list3 =[100, 200, 300, 400, 500, 600, 700]
+# list1.extend(list2)
+# list1.extend(list3)
+# list1.sort()
+# new = [i for i in list1]
+# print(new)
+
+
+# l = ['Red color', 'Orange#', 'Green', 'Orange @', 'White']
+# a = l[:1][-1][:3]
+# b = l[:2][-1][:6]
+# c = l[:3][-1]
+# d = l[:4][-1][:6]
+# e = l[:5][-1]
+# f = f'{a},{b},{c},{d},{e}'
+# print(f)
+
+
+# l = [2, 1, 5, 6, 8, 3, 4, 9, 10, 11, 8, 12]
+# a = l[8:11]
+# print(sum(a))
+
+# l = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]]
+# new = [j for i in l for j in i]
+# a = new[0:4]
+# b = new[4:8]
+# c = new[8:12]
+# d = new[12:]
+# a.sort(reverse=True)
+# b.sort(reverse=True)
+# c.sort(reverse=True)
+# d.sort(reverse=True)
+# print(a, b, c, d)
+
+# a = [1, 2, 3, 4, 5, 6, 7, 8]
+# b = [2, 2, 3, 1, 2, 6, 7, 9]
+# c = [2, 1, 3, 1, 2, 6, 7, 9]
+# result = sum(m == n == o for m, n, o in zip(a, b, c))
+
+# print(result)
+
+# l = [12, 33, 23, 10, 67, 89, 45, 667, 23, 12, 11, 10, 54]
+# a = tuple(l)
+# y = enumerate(a)
+# print(list(y))
+
+
+# a = ['red', 'green', 'black', 'orange']
+# b  = ['red', 'pink', 'green', 'white', 'black']
+# c  = ['white', 'orange', 'pink', 'black']
+
+# if a == b and b==c and a==c:
+#     print("True")
+
+# else:
+#     print("false")
+
+
+# l1 = [1, 1, 2, 3, 3, 4, 4, 5, 6, 7]
+# l2 = [1, 1, 2, 4, 5, 6]
+# a = set(l1)
+# b = set(l2)
+# x = a.difference(b)
+# print(list(x))
+
+# l = ['Python', 'Exercises', 'Practice', 'Solution', 'Exercises']
+# a = set(l)
+# print(list(a))
+
+# a = [1, 3, 5, 7, 4, 1, 6, 8]
+# b = [i for i in a if i %2==0]
+# c = [j for j in a if j %2!=0]
+# print(b[0])
+# print(c[0])
+
+# l = [1, 1, 2, 3, 3, 4, 4, 5, 6, 7]
+# new= [i for i in l if i%2==0]
+# print(new)
+
+# l = [19, 'red', 12, 'green', 'blue', 10, 'white', 'green', 1]
+# a  = l[:1]
+# b = l[2:3]
+# c = l[5:6]
+# d = l[8:]
+# a.extend(b)
+# a.extend(c)
+# a.extend(d)
+# a.sort()
+# # print(a)
+
+# x =l[1:2]
+# z =l[3:4]
+# y =l[4:5]
+# v =l[6:7]
+# n = l[7:8]
+# x.extend(z)
+# x.extend(y)
+# x.extend(v)
+# x.extend(n)
+# x.sort()
+# a.extend(x)
+# print(a)
+
+# l= ['4', '12', '45', '7', '0', '100', '200', '-12', '-500']
+# # l.reverse()
+# # print(l)
+# a= set(l)
+# b = list(a)
+# b.sort()
+# print(b)
+
+
+l = [[], [], [], 'Red', 'Green', [1, 2], 'Blue', [], []]
+# a = l[3:4]
+# b = l[4:5]
+# c = l[5:6]
+# d = l[6:7]
+# e = f'{a}{b}{c}{d}'
+# new = []
+# for i in e:
+#     for j in i:
+#         x = "".join(map(str,e))
+#         new.append(x)
+
+#         print(new)
+
+# x = str(l)
+# a = x[12:44]
+# b = list(a)
+# print(b)
+
+
+# l = ['red', 'green', 'blue', 'white', 'black', 'orange']
+# l.remove("white")
+# l.remove("orange")
+# print(l)
+
+# l = [['orange', 'red'], ['green', 'blue'], ['white', 'black', 'pink']]
+# new = []
+# for i in l:
+#     new.append(i)
+#     new.reverse()
+        
+# print(new)
+
+# l = [[1, 2, 3, 4], [0, 2, 4, 5], [2, 3, 4, 2, 4]]
+# new = []
+# for i in l:
+#     new.append(i)
+#     new.reverse()
+        
+# print(new)
+
+# l = [4, 3, 0, 5, 3, 0, 2, 3, 4, 2, 4, 3, 5]
+# for i in max(l):
+#     print(i)
+
+# l1 = [1, 3, 5, 7, 9, 11]
+# l1.sort()
+# l2 = [0, 2, 4, 6, 8, 10]
+# l2.sort()
+# l1.extend(l2)
+# l1.sort()
+# print(l1)
+
+# import itertools
+# l = [0, 1, 3, 5, 0, 3, 4, 5, 0, 8, 0, 3, 6, 0, 3, 1, 1, 0]
+# count = 1
+# for i in l:
+# nums = (1, 2, 3, 4, 5)
+# sum = 0
+# for num in nums:
+#     print(nums)
+
+# l1 = [[10, 20], [30, 40], [50, 60], [30, 20, 80]]
+# l2 = [[61], [12, 14, 15], [12, 13, 19, 20], [12]]
+# new1 = [j for i in l1 for j in i]
+# new2 = [j for i in l2 for j in i]
+# a = new1[0:2]
+# b = new2[0:1]
+# a.extend(b)
+# c = new1[2:4]
+# d = new2[1:4]
+# c.extend(d)
+# e = new1[4:6]
+# f = new2[4:8]
+# e.extend(f)
+# g = new1[6:]
+# h = new2[8:]
+# g.extend(h)
+# print([a,c,e,g])
+
+
+# l1 = [2, 4, 7, 0, 5, 8]
+# l2 = [3, 3, -1, 7]
+# l1.extend(l2)
+# a = l1[4:5]
+# b = l1[2:3]
+# c = l1[]
+# print(l1)
+
+# [2, 4, 7, 0, 5, 8]
+# [2, 5, 8]
+# [0, 1]
+# [3, 3, -1, 7]
+
+
+# l = [('V', 60), ('VI', 70), ('VII', 75), ('VIII', 72), ('IX', 78), ('X', 70)]
+# a = dict(l)
+# ma = max(a.values())
+# mi = min(a.values())
+# print((ma,mi))
+
+# l = [3,10,4,7,5,7,8,3,3,4,5,9,3,4,9,8,5]
+# l.remove(4)
+# l.remove(4)
+# print(l)
+
+# l = ['s', 'd', 'f', 's', 'd', 'f', 's', 'f', 'k', 'o', 'p', 'i', 'w', 'e', 'k', 'c']
+# s = l.pop(7)
+# print(s)
+
+
+# l = [12, 45, 23, 67, 78, 90, 45, 32, 100, 76, 38, 62, 73, 29, 83]
+# new = [i for i in l if i % 2==0]
+# for j in new:
+#     if j >=45:
+#         print(j)
+#     else:
+#         pass
+
+
+# l = [12, 45, 23, 67, 78, 90, 45, 32, 100, 76, 38, 62, 73, 29, 83]
+# a = l[0:3]
+# b = l[3:6]
+# c = l[6:9]
+# d = l[9:12]
+# e = l[12:]
+# print([a,b,c,d,e])
+
+
+# l = [[12, 45, 23, 67], [78, 90, 45, 32], [100, 76, 38, 62], [73, 29, 83]]
+# new = [j for i in l for j in i]
+# a = new[0:5]
+# b = new[5:10]
+# c = new[10:]
+# print([a,b,c])
+
+# l = [12, 0, None, 23, None, -55, 234, 89, None, 0, 6, -12]
+# a = set(l)
+# b = list(a)
+# b.pop(4)
+# print(b)
+
+# l = ['Red', 'Maroon', 'Yellow', 'Olive']
+# s = str(l)
+# l1= list(s)
+# print(l1)
+
+# l = ['a', 'b', 'c', 'd', 'e', 'f']
+# for i in l:
+#     print(i)
+
+# l = [[1, 2, 5], [4, 5, 8], [7, 3, 6]]
+# new = [j for i in l for j in i]
+
+
+# r = ['red', 'white', 'a', 'b', 'black', 'f']
+# a = str(r)
+# for i in a:
+#   print(i)
+
+# s = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0]
+# new  = []
+# for i, value in enumerate(s):
+#     new.append(value)
+#     if (i + 1) % 2 == 0:
+#         new.append('a')
+
+# print(new)
+
+
+# d = {1: 10, 2: 20, 3: 30, 4: 40, 5: 50, 6: 60}
+# a = d.keys()
+# b = d.values()
+# print(a,b)
+
+# d = {'Math':81, 'Physics':83, 'Chemistry':87}
+# a = list(d.items())
+# a.reverse()
+# b = dict(a)
+# print(b)
+
+# d = {'key1': 1, 'key2': 3, 'key3': 2}, {'key1': 1, 'key2': 2}
+# a = list(d)
+# if 'key1' =='key2':
+#     print("key 1 equal to key 2")
+# elif 'key2' =='key3':
+#     print("key 1 not equal to key 2")
+# elif 'key3' =='key1':
+#     print("key 3 not equal to key 1")
+# else:
+#     pass
+
+
+# d = {'x': [11, 12, 13, 14, 15, 16, 17, 18, 19],
+# 'y': [21, 22, 23, 24, 25, 26, 27, 28, 29],
+# 'z': [31, 32, 33, 34, 35, 36, 37, 38, 39]}
+
+# a = d["x"][4:5]
+# b = d['y'][4:5]
+# c = d['z'][4:5]
+# print(a,b,c)
+
+d = {'c1': 'Red', 'c2': 'Green', 'c3': None}
+# d.pop("c3")
+# d.popitem()
+# print(d)
+# for (key,values) in d.items():
+#     if values is not None:
+#         print(d.items())
+
+# d1={key:value for (key, value) in d.items() if value is not None}
+# print(d1)
+
+# d = {'Cierra Vega': 175, 'Alden Cantrell': 180, 'Kierra Gentry': 165, 'Pierre Cox': 190}
+# # a = 175
+# for i in d.values():
+#     if i >= 175:
+#         print(i)
+#     else:
+#         pass
+
+
+# l1 =['S001', 'S002', 'S003', 'S004']
+# l2 =['Adina Park', 'Leyton Marsh', 'Duncan Boyle', 'Saim Richards']
+# l3 =[85, 98, 89, 92]
+# l1.extend(l2)
+# l1.extend(l3)
+# print(l1)
+# a = l1[0:1]
+# b = l1[4:5]
+# c = l1[8:9]
+# b.extend(c)
+
+# f = f'{a}{b}'
+# print({f})
+
+# d = {'Cierra Vega': (6.2, 70), 'Alden Cantrell': (5.9, 65), 'Kierra Gentry': (6.0, 68), 'Pierre Cox': (5.8, 66)}
+# d1 = 6,70
+# for key,value in d.items():
+#     if value[0] >= 6.0 and value[1]>=70:
+#         print(key,value)
+
+
+# {'Cierra Vega': 12, 'Alden Cantrell': 12, 'Kierra Gentry': 12, 'Pierre Cox': 12}
+# for key,value in d.items():
+#     if value[0] == 12:
+#         print(key,value)
+#     else:
+#         pass
+
+
+# list
+
+# l1 =['0', '1', '2', '3', '4']
+# l2 = ['red', 'green', 'black', 'blue', 'white']
+# l3 =['100', '200', '300', '400', '500']
+# for m,n,o in zip(l1,l2,l3):
+#     print(m,n,o)
+
+# l = [2, 3, 9, 8, 2, 0, 39, 84, 2, 2, 34, 2, 34, 5, 3, 5]
+# l.pop()
+# l.pop()
+# l.pop()
+
+# print(l)
+
+# l = ['a', 'b', 'c', 'd', 'e', 'f', 'g']
+# a = l[0:1]
+# b = l[2:3]
+
+# l = [10,2,5,92,1,7,25]
+# new = [i for i in l if i%2!=0]
+# print(new)

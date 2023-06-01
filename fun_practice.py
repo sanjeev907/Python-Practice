@@ -168,3 +168,138 @@
 
 # obj =sa() 
 # obj.add("sanju",25)
+
+
+# x = 14
+# class f:
+#     a = 15
+#     def fun(self,b):
+#         print(x,self.a,b)
+
+
+#     def sum(self):
+#         print(x)
+
+
+# o= f()
+# o.fun(5)
+# # o.sum()
+
+# a = 20
+# def fun():
+    
+    
+#     print(a)
+#     def fun2():
+#         print(a)
+#     fun2()
+
+# fun()
+
+# b = 20
+# class A:
+#     s = 25
+#     def fun(self):
+#         print(b,self.s)
+#     def fun2(self):
+#         print(b)
+    
+        
+
+# C = A()
+# C.fun()
+# C.fun2()
+
+# def fun():
+#     l = [5,25,15]
+#     m = max(l)
+#     print(m)
+
+# fun()
+
+
+# def fun():
+#     t = (8, 2, 3, 0, 7)
+#     s = sum(t)
+#     print(s)
+
+# fun()
+
+
+# def fun():
+#     t = (8, 2, 3, -1, 7)
+#     l = list(t)
+#     a = 1
+#     for i in l:
+#         a = a * i
+    
+#     print(a)
+
+# fun()
+
+# def fun():
+#     s = "1234abcd"
+#     l = list(s)
+#     l.reverse()
+#     a = ''.join(map(str,l))
+#     print(a)
+
+# fun()
+
+
+# def fun(n):
+#     if n ==0:
+#         print(1)
+#     else:
+#         a = n * (n-1)
+#         print(a)
+
+# fun(4)
+
+# def fun():
+#     l = [1,2,3,3,3,3,4,5]
+#     a = set(l)
+#     b = list(a)
+#     print(b)
+
+
+# fun()
+
+# def fun(*args,**kwargs):
+#     print(args,)
+
+# fun("sanjeev","kaushik","sdjddds","saisasa")
+
+
+# def fun():
+#     s = "The quick Brow Fox"
+#     upper = 0
+#     lower = 0
+#     for i in s:
+#         if i.isupper():
+#             upper = upper + 1
+#         elif i.islower():
+#             lower = lower + 1
+#         else:
+#             pass
+    
+#     print(upper,lower)
+
+# fun()
+
+
+# def fun():
+#     l = [1,2,3,3,3,3,4,5]
+#     a = set(l)
+#     b = list(a)
+#     print(b)
+
+
+# fun()
+
+# def fun():
+#     l = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+#     new = [i for i in l if i %2==0]
+#     print(new)
+
+# fun()

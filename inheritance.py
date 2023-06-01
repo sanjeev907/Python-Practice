@@ -96,42 +96,42 @@
 
 # 3. Multiple Inheritance(We have diferent Parents Class but single child class in Mutiple Inheritance(only single class inhert the properties of all Parents Class))
 
-# class Parent1:
-#     def Add(self):
-#         num1= int(input("Enter the First Value\n"))
-#         num2 = int(input("Enter the Second Value\n"))
-#         print(num1 + num2)
-# class Parent2:
-#     def Sub(self):
-#         num1= int(input("Enter the First Value\n"))
-#         num2 = int(input("Enter the Second Value\n"))
-#         print(num1 - num2)
+class Parent1:
+    def Add(self):
+        num1= int(input("Enter the First Value\n"))
+        num2 = int(input("Enter the Second Value\n"))
+        print(num1 + num2)
+class Parent2:
+    def Sub(self):
+        num1= int(input("Enter the First Value\n"))
+        num2 = int(input("Enter the Second Value\n"))
+        print(num1 - num2)
 
-# class Parent3:
-#     def Mutiple(self):
-#         num1= int(input("Enter the First Value\n"))
-#         num2 = int(input("Enter the Second Value\n"))
-#         print(num1 * num2)
+class Parent3:
+    def Mutiple(self):
+        num1= int(input("Enter the First Value\n"))
+        num2 = int(input("Enter the Second Value\n"))
+        print(num1 * num2)
 
-# class Parent4:
-#     def Divide(self):
-#         num1= int(input("Enter the First Value\n"))
-#         num2 = int(input("Enter the Second Value\n"))
-#         print(num1 / num2)
-
-
-# class Child(Parent1,Parent2,Parent3,Parent4):
-#     def Rem(self):
-#         num1= int(input("Enter the First Value\n"))
-#         num2 = int(input("Enter the Second Value\n"))
-#         print(num1 % num2)
+class Parent4:
+    def Divide(self):
+        num1= int(input("Enter the First Value\n"))
+        num2 = int(input("Enter the Second Value\n"))
+        print(num1 / num2)
 
 
-# obj = Child()
-# obj.Add()
-# obj.Sub()
-# obj.Mutiple()
-# obj.Rem()
+class Child(Parent1,Parent2,Parent3,Parent4):
+    def Rem(self):
+        num1= int(input("Enter the First Value\n"))
+        num2 = int(input("Enter the Second Value\n"))
+        print(num1 % num2)
+
+
+obj = Child()
+obj.Add()
+obj.Sub()
+obj.Mutiple()
+obj.Rem()
 
 
 # hierarchical Inheritace(we have single but different child which each class inhert the properties of single Parent Class)

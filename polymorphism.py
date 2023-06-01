@@ -7,20 +7,20 @@
 
 # method overloading (whenever class contain  more than one method with same name and different type of parameter called overloading )
 
-# class A:
-#     def show(self):
-#         print("welcome")
+class A:
+    def show(self):
+        print("welcome")
     
-#     def show(self,first_name=''):
-#         print("welcome",first_name)
+    def show(self,first_name=''):
+        print("welcome",first_name)
 
-#     def show(self,first_name='',lst_name=''):
-#         print("welcome",first_name,lst_name)
+    def show(self,first_name='',lst_name=''):
+        print("welcome",first_name,lst_name)
 
-# obj= A()
-# obj.show()
-# obj.show("Sanjeev")
-# obj.show("Sanjeev","Kaushik")
+obj= A()
+obj.show()
+obj.show("Sanjeev")
+obj.show("Sanjeev","Kaushik")
 
 
 # 2. Method overriding (whenever we write method name with same signature in parent and child class called method overriding)
